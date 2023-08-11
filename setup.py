@@ -1,0 +1,17 @@
+from setuptools import setup
+import pytest_nose_attrib
+
+setup(
+    name='pytest-nose-attrib_plugin',
+    description='pytest plugin to use nose @attrib marks decorators'
+                'and pick tests based on attributes and'
+                'partially uses nose-attrib plugin approach',
+    version=pytest_nose_attrib.version,
+    author='Maksim Gelbakhiani',
+    author_email='Max.Gelbakhiani@gmail.com',
+    packages=['pytest_nose_attrib'],
+    entry_points={'pytest11': ['attr = pytest_nose_attrib.plugin']},
+    install_requires=['pytest>=7.2'],
+    license="MIT License",
+    package_data={'pytest_attrib': ["VERSION"]},
+)
