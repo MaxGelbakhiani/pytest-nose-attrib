@@ -7,4 +7,4 @@ def get_version() -> str:
   with open(filepath, 'r') as f:
     return f.readline().strip()
 
-version = get_version()
+__version__ = get_version()
