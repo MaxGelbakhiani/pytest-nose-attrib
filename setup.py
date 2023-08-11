@@ -9,6 +9,7 @@ setup(
     version=pytest_nose_attrib.version,
     author='Maksim Gelbakhiani',
     author_email='Max.Gelbakhiani@gmail.com',
+    url='https://github.com/MaxGelbakhiani/pytest-nose-attrib',
     packages=['pytest_nose_attrib'],
     entry_points={'pytest11': ['attr = pytest_nose_attrib.plugin']},
     install_requires=['pytest>=2.2'],
