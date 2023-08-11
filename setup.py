@@ -6,7 +6,7 @@ setup(
     description='pytest plugin to use nose @attrib marks decorators'
                 'and pick tests based on attributes and'
                 'partially uses nose-attrib plugin approach',
-    version=pytest_nose_attrib.__version__,
+    version=pytest_nose_attrib.VERSION,
     author='Maksim Gelbakhiani',
     author_email='Max.Gelbakhiani@gmail.com',
     url='https://github.com/MaxGelbakhiani/pytest-nose-attrib',
