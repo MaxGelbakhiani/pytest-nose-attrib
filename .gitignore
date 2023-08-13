@@ -1,0 +1,12 @@
+# ignore IDE files
+.vscode
+.idea
+
+# ignore temp files under any path
+.DS_Store
+**/__pycache__
+
+# ignore build artifacts
+/dist
+/build
+*.egg-info
