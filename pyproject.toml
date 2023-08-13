@@ -1,6 +1,6 @@
 [project]
 name = "pytest-nose-attrib"
-version = "0.1.0"
+version = "0.1.1"
 readme = "README.md"
 description = "pytest plugin to use nose @attrib marks decorators and pick tests based on attributes and partially uses nose-attrib plugin approach"
 authors = [
@@ -11,15 +11,15 @@ classifiers = [
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
 ]
+dependencies = [
+    'pytest >=2.2'
+    ]
 
 [project.urls]
 Homepage = "https://github.com/MaxGelbakhiani/pytest-nose-attrib"
 
-[tool.poetry.plugins."pytest11"]
+[project.entry-points."pytest11"]
 attr = "pytest_nose_attrib.plugin"
-dependencies = [
-    "pytest>=2.2"
-]
 
 [build-system]
 requires = ["setuptools"]
